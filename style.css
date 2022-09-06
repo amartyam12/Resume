@@ -1,0 +1,75 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+body {
+	background: #f2f0eb url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+	font: 16px Helvetica, Arial, Sans-Serif; color: #ffffff; line-height: 24px;
+    background-position: center;
+
+}
+
+#container {
+	width: 900px; margin: 0 auto;
+}
+
+#logo {
+	margin: 10px auto 0 auto; position: relative; width: 183px;
+}
+ul#nav {
+	width: 940px; list-style: none; overflow: hidden; margin: -104px auto 30px auto;
+}
+ul#nav li {
+	width: 126px; height: 33px; float: left; padding: 13px 0 0 0;
+	background: url("https://www.popwebdesign.net/images/tutorial/photoshop/ps-menu_1.jpg");
+	font-weight: bold; text-align: center; text-transform: uppercase;
+    box-shadow: black;
+}
+
+ul#nav li a {
+	color: #c4d7e0; text-decoration: none;
+}
+ul#nav li a:hover {
+	color: #570c29;
+}
+#header {
+    height: 244px; padding: 52px 0 0 57px;
+    background: url("https://media.istockphoto.com/photos/empty-wall-and-pink-spotlight-in-room-picture-id835931764?k=20&m=835931764&s=612x612&w=0&h=k8mTkyN8dBB6iG_be93VedgzKmc_2ZpBikEkkLCHOZs=");
+}
+            
+#header h1 {
+    font: 38px Georgia, Serif; color: #f2f0eb; letter-spacing: 2px; margin: 0 0 20px 0;
+}
+#header h2 {
+    width: 510px; font: 30px Georgia, Serif; color: #f2f0eb; letter-spacing: 2px; margin: 0 0 20px 0;
+}
+#content {
+    background: url(images/content-bg.png) repeat-y;
+    padding: 57px 69px 50px 69px; overflow: hidden;
+    color: #f2f0eb;
+}
+#content h2 {
+    font: 30px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+}
+                
+#content h3 {
+    font: 26px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+}
+                    
+#content p {
+    margin: 0 50px 80px 0;
+}
+                    
+#content a {
+    color: #a12121; text-decoration: none;
+}
+#content a:hover {
+    color: #299b12;
+}
+                    
+#content .portfolio-item {
+    float: left; margin: 0 100px 14px 14px;
+}
+#content .portfolio-item p.btn {
+    margin: 0;
+}
