@@ -2,54 +2,70 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldse
 	margin: 0; padding: 0; border: 0;
 }
 
-body {
-	background: #f2f0eb url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
-	font: 16px Helvetica, Arial, Sans-Serif; color: #ffffff; line-height: 24px;
+/* body {
+	background: #f2f0eb  url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+	font: 16px Helvetica, Arial, Sans-Serif; color: #ffffff;line-height: 24px;
+    border: 2px solid red;
     background-position: center;
 
+
+} */
+body {
+    background: url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 #container {
 	width: 900px; margin: 0 auto;
+    height:fit-content
 }
 
-#logo {
-	margin: 10px auto 0 auto; position: relative; width: 183px;
+.logo {
+    border:2px solid rgb(51, 9, 51);
+	width: 90%;
+    border-radius: 50%;
+    box-shadow: 0 10px 6px black;
+}
+#logo1{
+    margin: 45px auto 0 auto; position: relative; width: 15%;
 }
 ul#nav {
-	width: 940px; list-style: none; overflow: hidden; margin: -104px auto 30px auto;
+	width: 940px; list-style: none; overflow: hidden; margin: -160px auto 30px auto;
 }
 ul#nav li {
 	width: 126px; height: 33px; float: left; padding: 13px 0 0 0;
-	background: url("https://www.popwebdesign.net/images/tutorial/photoshop/ps-menu_1.jpg");
-	font-weight: bold; text-align: center; text-transform: uppercase;
-    box-shadow: black;
+	font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
+    
 }
 
 ul#nav li a {
 	color: #c4d7e0; text-decoration: none;
 }
-ul#nav li a:hover {
-	color: #570c29;
-}
 #header {
-    height: 244px; padding: 52px 0 0 57px;
+    height: 171px; padding: 30px;
     background: url("https://media.istockphoto.com/photos/empty-wall-and-pink-spotlight-in-room-picture-id835931764?k=20&m=835931764&s=612x612&w=0&h=k8mTkyN8dBB6iG_be93VedgzKmc_2ZpBikEkkLCHOZs=");
+    border-radius: 50px;
+    box-shadow: -10px 10px 10px 6px rgb(0, 0, 0);
 }
             
 #header h1 {
-    font: 38px Georgia, Serif; color: #f2f0eb; letter-spacing: 2px; margin: 0 0 20px 0;
+    font: 38px Georgia, Serif; color: #f2f0eb; letter-spacing: 2px;     margin: 75px 10px 20px 0px;
 }
 #header h2 {
     width: 510px; font: 30px Georgia, Serif; color: #f2f0eb; letter-spacing: 2px; margin: 0 0 20px 0;
 }
 #content {
     background: url(images/content-bg.png) repeat-y;
-    padding: 57px 69px 50px 69px; overflow: hidden;
+    padding: 115px 69px 20px 100px;
+    overflow: hidden;
     color: #f2f0eb;
 }
 #content h2 {
     font: 30px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+    
 }
                 
 #content h3 {
@@ -61,15 +77,67 @@ ul#nav li a:hover {
 }
                     
 #content a {
-    color: #a12121; text-decoration: none;
+    color: #21a136; text-decoration: none;
 }
 #content a:hover {
-    color: #299b12;
+    color: #125505;
 }
                     
 #content .portfolio-item {
     float: left; margin: 0 100px 14px 14px;
+    box-shadow: -10px 10px 6px black;
 }
-#content .portfolio-item p.btn {
+/* #content .portfolio-item p.btn {
     margin: 0;
+} */
+.popup{
+    width: 400px;
+    background: rgb(104, 29, 39);
+    border-radius : 10px;
+    position:absolute ;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    visibility: hidden;
+    box-shadow: -10px 10px 6px black;
+}
+.btn{
+    padding: 10px 60px;
+    background:transparent;
+    color: #c4d7e0;
+    font-weight: bold;
+    margin-left: 66%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 500;
+    transition:transform 1s,top 3s;
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: black;
+    color: #c4d7e0;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 10px 6px rgba(0, 0,0,0.9);
+
 }
